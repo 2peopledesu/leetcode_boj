@@ -4,8 +4,8 @@ SELECT
     c.city, 
     c.state 
 FROM 
-    Person p 
-INNER JOIN 
     Address c 
+RIGHT JOIN 
+    Person p 
 ON 
     p.personId = c.personId;
