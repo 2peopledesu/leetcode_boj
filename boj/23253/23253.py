@@ -17,4 +17,4 @@ for i in range(m):
     if not possible:
         break
 
-print("Yes" if possible else "No")
+print("Yes" if possible else "No")  

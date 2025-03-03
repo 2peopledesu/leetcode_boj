@@ -31,6 +31,5 @@ while moved_count < m:
                 moved_count += 1
                 break
             positions[i] += 1
-    
             
 print(count)
