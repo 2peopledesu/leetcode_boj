@@ -9,14 +9,15 @@ public class Main {
         int K = Integer.parseInt(st.nextToken());
 
         Queue<Integer> queue = new LinkedList<>();
-        for(int i = 1; i <= N; i++) {
+        for (int i = 1; i <= N; i ++) {
             queue.offer(i);
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("<");
+        sb.append('<');
+
         while(!queue.isEmpty()) {
-            for(int i = 0; i < K - 1; i++) {
+            for (int i = 0; i < K; i ++) {
                 queue.offer(queue.poll());
             }
             sb.append(queue.poll()).append(", ");
