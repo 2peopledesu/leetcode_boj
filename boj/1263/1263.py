@@ -11,7 +11,6 @@ works.sort(key=lambda x: (x[1], x[0]))
 start_time = float('inf')
 for t, d in reversed(works):
     start_time = min(d, start_time) - t
-    print(start_time)
     if start_time < 0:
         print(-1)
         exit()

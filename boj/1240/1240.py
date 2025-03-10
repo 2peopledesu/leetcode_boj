@@ -20,7 +20,7 @@ def bfs(start, target):
 input = sys.stdin.readline
 
 n, m = map(int, sys.stdin.readline().split())
-tree = [{} for _ in range(n+1)]  # 1-based indexing
+tree = [{} for _ in range(n+1)]
 
 for _ in range(n-1):
     a, b, c = map(int, sys.stdin.readline().split())

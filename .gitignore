@@ -1,1 +1,4 @@
 **/*.LCKMain.*
+**/*.DS_Store
+**/*Solution.java
+**/*test.py

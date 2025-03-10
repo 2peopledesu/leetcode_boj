@@ -1,7 +1,6 @@
 import sys
 from collections import deque
 
-# 8방향 탐색 (상하좌우, 대각선)
 dx = [-1, -1, -1, 0, 0, 1, 1, 1]
 dy = [-1, 0, 1, -1, 1, -1, 0, 1]
 
@@ -40,7 +39,6 @@ def count_peaks(n, m, grid):
                     count += 1
     return count
 
-# 입력 처리
 n, m = map(int, sys.stdin.readline().split())
 grid = []
 for _ in range(n):
