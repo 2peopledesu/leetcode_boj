@@ -19,7 +19,7 @@ def solution(maps):
                             visited[nx][ny] = island
                             queue.append((nx, ny))
                             
-    answer = [0] * (island - 1)
+    answer = [0] * (island)
     for i in range(len(maps)):
         for j in range(len(maps[0])):
             if visited[i][j] != False:
