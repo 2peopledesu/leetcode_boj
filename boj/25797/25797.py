@@ -152,22 +152,16 @@ def check_area(white_area, grey_area):
 def check_board():
     areas, count = extract_area()
     
-    # 불필요한 경계선 체크 추가
     for i in range(n):
         for j in range(n):
-            # 오른쪽 칸과 같은 영역인지 체크
             if j+1 < n and areas[i][j] == areas[i][j+1]:
-                # 같은 영역인데 벽이 있으면 불필요한 경계선
                 if vertical_walls[i][j+1]:
                     return False
             
-            # 아래쪽 칸과 같은 영역인지 체크
             if i+1 < n and areas[i][j] == areas[i+1][j]:
-                # 같은 영역인데 벽이 있으면 불필요한 경계선
                 if horizontal_walls[i+1][j]:
                     return False
     
-    # 기존 영역별 검사 코드
     for area_count in range(1, count + 1):
         white_areas, grey_areas = find_color_area(areas, area_count)
         
