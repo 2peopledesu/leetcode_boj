@@ -4,11 +4,6 @@ input = sys.stdin.readline
 
 n = int(input())
 
-# 1. 왼쪽 카드만 통에 버릴 수 있음
-# 2. 왼쪽, 오른쪽 둘 다 통에 버릴 경우 얻는 점수 X
-# 3. 왼쪽이든 오른쪽이든 남은 카드 없으면 게임 종료
-# 4. 오른쪽 카드가 왼쪽 카드보다 작은 경우 점수를 더하고 오른쪽 카드를 버릴 수 있음
-
 card1 = list(map(int, input().split()))
 card2 = list(map(int, input().split()))
 
