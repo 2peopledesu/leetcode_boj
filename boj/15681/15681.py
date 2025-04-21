@@ -1,6 +1,8 @@
 import sys
 from collections import defaultdict
 
+sys.setrecursionlimit(10**6)
+
 input = sys.stdin.readline
 
 n, r, q = map(int, input().split())
